@@ -39,7 +39,7 @@ public class Subscontroller {
 
 	@PostMapping("/subscription")
 	public String enrollMember(@RequestBody TransactionRequest request) {
-
+		System.out.println("In post mapping");
 		String memberStatus = service.enrollMember(request);
 
 		return memberStatus;
